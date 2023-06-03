@@ -80,7 +80,7 @@ const main = async () => {
     const adapterFlow = createFlow([flowPrincipal])
 
     const adapterProvider = createProvider(MetaProvider, {
-        jwtToken: process.env.JWTOKEN,
+        jwtToken: process.env.JWTTOKEN,
         numberId: process.env.NUMBER_ID,
         verifyToken: process.env.VERIFY_TOKEN,
         version: 'v16.0',
