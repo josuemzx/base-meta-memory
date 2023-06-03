@@ -73,16 +73,14 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         [flowDocs, flowGracias, flowTuto, flowDiscord]
     )
 
-
-    
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowPrincipal])
 
     const adapterProvider = createProvider(MetaProvider, {
-        jwtToken: process.env.JWTTOKEN,
-        numberId: process.env.NUMBER_ID,
-        verifyToken: process.env.VERIFY_TOKEN,
+        jwtToken: 'EAAHZAeouGuJQBAMJ2mLeuBXg7Mua99f2lJeluJZBZAANonHnraUvCUtI7sgD2tnmECbtgg9RfPSuowRFbjjplStZAWDEvBf3oZCpdwOuC5AwwQZAHPurSan4ttm9F7cxlsOgzlv85VlPYie6wOWwdI5ZA3DOMarvFqPUbUyuikWHJfYZC9CPT38QjgGNUdZCMY63XPhjSFwbHlgZDZD',
+        numberId: '110900135358169',
+        verifyToken: 'verifyToken',
         version: 'v16.0',
     })
 
