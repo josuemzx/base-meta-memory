@@ -78,11 +78,12 @@ const main = async () => {
     const adapterFlow = createFlow([flowPrincipal])
 
     const adapterProvider = createProvider(MetaProvider, {
-        jwtToken: 'EAAHZAeouGuJQBAMJ2mLeuBXg7Mua99f2lJeluJZBZAANonHnraUvCUtI7sgD2tnmECbtgg9RfPSuowRFbjjplStZAWDEvBf3oZCpdwOuC5AwwQZAHPurSan4ttm9F7cxlsOgzlv85VlPYie6wOWwdI5ZA3DOMarvFqPUbUyuikWHJfYZC9CPT38QjgGNUdZCMY63XPhjSFwbHlgZDZD',
-        numberId: '110900135358169',
-        verifyToken: 'verifyToken',
+        jwtToken: process.env.jwtToken,
+        numberId: process.env.numberId,
+        verifyToken: process.env.verifyToken,
         version: 'v16.0',
     })
+
 
     createBot({
         flow: adapterFlow,
